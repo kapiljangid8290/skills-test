@@ -1,0 +1,43 @@
+{
+  "landing": {
+    "slug": "own-the-street",
+    "purpose": "sales",
+    "audience": "Women who want bold, confidence-first boutique fashion that feels effortless from daytime errands to waterfront nights.",
+    "fear": "Looking either too basic or too dressed up, while still feeling uncomfortable in what they wear.",
+    "hero": {
+      "eyebrow": "Brooklyn Mood, Modern Edge",
+      "headline": "Bold women's boutique clothing that owns the street and the spotlight.",
+      "subheadline": "Shop Red Hook Vibes for statement dresses, polished sets, swimwear, and elevated everyday pieces designed to feel magnetic without trying too hard.",
+      "cta_primary": "Shop The Drop",
+      "cta_secondary": "Explore Collections",
+      "booster": "New-season energy | Confidence-first fits | Styles made to move"
+    },
+    "trust_bar": [
+      { "value": "4 collections", "label": "hero categories featured" },
+      { "value": "Street to shore", "label": "style point of view" },
+      { "value": "S-2XL", "label": "inclusive sizing across key pieces" },
+      { "value": "Fresh drops", "label": "new looks to rotate often" }
+    ],
+    "problem_section": {
+      "eyebrow": "The Real Problem",
+      "headline": "You should not have to choose between edge, comfort, and confidence.",
+      "copy": "Most women's boutique clothing swings too far in one direction: all trend with no wearability, or all basics with no spark. Red Hook Vibes sits in the middle, giving you pieces that feel styled, flattering, and ready for real life.",
+      "pain_points": [
+        "Outfits that photograph well but feel awkward after an hour.",
+        "Closets full of basics that never create a real moment.",
+        "Trend pieces that stop working once the season changes."
+      ]
+    },
+    "benefits": [
+      { "headline": "Walk in feeling finished", "body": "Each edit is built around complete-look energy, so getting dressed feels fast, polished, and intentional." },
+      { "headline": "Move through the day comfortably", "body": "From workday layers to late-night plans, silhouettes are chosen to stay wearable instead of fussy." },
+      { "headline": "Keep your edge without overthinking it", "body": "Streetwise details, feminine shapes, and versatile styling create outfits that feel bold but still easy." }
+    ],
+    "seo": {
+      "meta_title": "Bold Women's Boutique Clothing | Red Hook Vibes",
+      "meta_description": "Shop bold women's boutique clothing from Red Hook Vibes with dresses, sets, swimwear, and elevated everyday looks built for confidence.",
+      "h1": "Bold women's boutique clothing that owns the street and the spotlight.",
+      "target_kw": "bold women's boutique clothing"
+    }
+  }
+}
