@@ -37,6 +37,7 @@ body {
   background:
     radial-gradient(circle at top left, rgba(4, 107, 210, 0.12), transparent 26%),
     linear-gradient(180deg, #f8fbff 0%, #eef5fb 100%);
+  overflow-x: hidden;
 }
 
 img {
@@ -115,6 +116,54 @@ textarea {
   grid-template-columns: 1fr auto;
   align-items: center;
   padding: 16px 0;
+}
+
+.header-branding,
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.header-branding {
+  min-width: 0;
+}
+
+.header-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.header-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  color: var(--heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.header-link:hover,
+.header-link:focus-visible {
+  background: rgba(4, 107, 210, 0.1);
+  color: var(--primary);
+}
+
+.header-link.is-active {
+  background: linear-gradient(135deg, rgba(4, 107, 210, 0.14), rgba(4, 92, 180, 0.08));
+  color: var(--primary);
+  box-shadow: inset 0 0 0 1px rgba(4, 107, 210, 0.18);
+}
+
+.header-actions {
+  justify-content: flex-end;
 }
 
 .brand img,
@@ -855,6 +904,294 @@ textarea {
   pointer-events: auto;
 }
 
+.experience-page {
+  overflow: clip;
+}
+
+.experience-hero {
+  padding: 72px 0 84px;
+}
+
+.experience-hero-shell,
+.spotlight-shell,
+.audience-grid,
+.editorial-card-grid,
+.journey-editorial-grid,
+.mosaic-grid,
+.service-chip-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.experience-hero-shell {
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  align-items: start;
+}
+
+.experience-copy h1,
+.experience-copy p,
+.experience-copy .hero-actions,
+.service-chip-grid {
+  position: relative;
+  z-index: 1;
+}
+
+.experience-copy,
+.experience-media,
+.spotlight-copy,
+.spotlight-panel,
+.service-chip,
+.editorial-card,
+.journey-card,
+.audience-panel {
+  min-width: 0;
+}
+
+.experience-media {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.experience-hero-photo,
+.spotlight-image,
+.mosaic-grid figure,
+.journey-card figure {
+  margin: 0;
+  display: block;
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow);
+  background: #edf4fb;
+}
+
+.experience-hero-photo img,
+.spotlight-image img,
+.mosaic-grid img,
+.journey-card figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.experience-hero-photo-main {
+  aspect-ratio: 4 / 3;
+}
+
+.experience-hero-photo-tall {
+  aspect-ratio: 4 / 5;
+}
+
+.experience-quote-card,
+.service-chip,
+.editorial-card,
+.journey-card,
+.audience-panel {
+  border-radius: var(--radius-xl);
+}
+
+.experience-quote-card {
+  grid-column: span 2;
+  align-self: start;
+  padding: 28px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.07));
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #f4faff;
+}
+
+.experience-quote-card blockquote {
+  margin: 18px 0 14px;
+  font-family: var(--heading-font);
+  font-size: clamp(1.35rem, 2vw, 2rem);
+  line-height: 1.25;
+}
+
+.experience-quote-card p {
+  margin: 0;
+  color: rgba(244, 250, 255, 0.72);
+}
+
+.service-chip-grid {
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  grid-auto-rows: 1fr;
+  align-items: stretch;
+  margin-top: 34px;
+}
+
+.service-chip {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 16px;
+  align-items: start;
+  align-content: start;
+  padding: 20px 22px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  height: 100%;
+}
+
+.service-chip > div {
+  min-width: 0;
+}
+
+.service-chip img,
+.editorial-card img,
+.audience-panel img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.service-chip strong,
+.editorial-card h3,
+.journey-card h3,
+.audience-panel h3 {
+  display: block;
+  margin: 0 0 10px;
+}
+
+.service-chip p,
+.editorial-card p,
+.journey-card p,
+.audience-panel li {
+  margin: 0;
+  line-height: 1.7;
+}
+
+.service-chip strong {
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+
+.service-chip p {
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.spotlight-shell {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 420px);
+  align-items: start;
+}
+
+.spotlight-panel {
+  padding: 26px;
+  border-radius: 32px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(240, 245, 250, 0.96));
+  box-shadow: var(--shadow);
+}
+
+.spotlight-image {
+  aspect-ratio: 4 / 3;
+}
+
+.spotlight-stats {
+  display: grid;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.spotlight-stats article {
+  padding: 18px 20px;
+  border-radius: 20px;
+  background: #fff;
+  border: 1px solid rgba(30, 41, 59, 0.08);
+}
+
+.spotlight-stats strong {
+  color: var(--heading);
+}
+
+.spotlight-stats p {
+  margin: 8px 0 0;
+}
+
+.spotlight-list li {
+  color: var(--text);
+}
+
+.editorial-card-grid,
+.journey-editorial-grid,
+.audience-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.editorial-card,
+.journey-card,
+.audience-panel {
+  padding: 28px;
+  box-shadow: var(--shadow);
+  height: 100%;
+}
+
+.editorial-card {
+  min-height: 100%;
+}
+
+.editorial-card-blue {
+  background: linear-gradient(160deg, #e8f2ff 0%, #d9eafe 100%);
+}
+
+.editorial-card-light {
+  background: #fff;
+  border: 1px solid rgba(30, 41, 59, 0.08);
+}
+
+.editorial-card-dark {
+  background: linear-gradient(180deg, #132643 0%, #0d1b31 100%);
+  color: #f4faff;
+}
+
+.journey-card {
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(30, 41, 59, 0.08);
+}
+
+.journey-card figure {
+  aspect-ratio: 4 / 3;
+  margin-bottom: 22px;
+}
+
+.audience-panel {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.audience-panel-featured {
+  background: rgba(4, 107, 210, 0.16);
+}
+
+.audience-panel ul {
+  margin: 18px 0 0;
+  padding-left: 18px;
+}
+
+.audience-panel li + li {
+  margin-top: 10px;
+}
+
+.experience-gallery-section {
+  background:
+    radial-gradient(circle at top right, rgba(4, 107, 210, 0.1), transparent 30%),
+    linear-gradient(180deg, #f7fbff 0%, #edf5fb 100%);
+}
+
+.mosaic-grid {
+  grid-template-columns: 1.2fr 0.8fr 0.8fr;
+  grid-auto-rows: 210px;
+}
+
+.mosaic-large {
+  grid-row: span 2;
+}
+
+.experience-lead-shell {
+  border-radius: 34px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(244, 249, 255, 0.98)),
+    #fff;
+}
+
 @media (min-width: 821px) {
   .mobile-sticky-cta {
     display: none;
@@ -870,12 +1207,26 @@ textarea {
   .stats-grid,
   .comparison-grid,
   .faq-grid,
-  .lead-shell {
+  .lead-shell,
+  .experience-hero-shell,
+  .spotlight-shell,
+  .editorial-card-grid,
+  .journey-editorial-grid,
+  .audience-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .hero-grid {
     align-items: start;
+  }
+
+  .service-chip-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .mosaic-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: minmax(220px, auto);
   }
 }
 
@@ -896,12 +1247,32 @@ textarea {
   .tldr-grid,
   .lead-shell,
   .form-grid,
-  .trust-grid {
+  .trust-grid,
+  .experience-hero-shell,
+  .experience-media,
+  .spotlight-shell,
+  .editorial-card-grid,
+  .journey-editorial-grid,
+  .audience-grid,
+  .mosaic-grid,
+  .service-chip-grid {
     grid-template-columns: 1fr;
   }
 
   .header-shell {
     justify-items: start;
+  }
+
+  .header-branding,
+  .header-actions,
+  .header-nav {
+    width: 100%;
+  }
+
+  .header-branding,
+  .header-actions {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .brand img,
@@ -918,8 +1289,16 @@ textarea {
     padding: 56px 0 52px;
   }
 
+  .experience-hero {
+    padding: 48px 0 56px;
+  }
+
   .hero-copy h1 {
     max-width: 12ch;
+  }
+
+  .experience-copy h1 {
+    max-width: 11ch;
   }
 
   .hero-gallery {
@@ -932,6 +1311,17 @@ textarea {
 
   .hero-form-card {
     display: none;
+  }
+
+  .experience-hero-photo-main,
+  .experience-hero-photo-tall,
+  .spotlight-image,
+  .journey-card figure {
+    aspect-ratio: auto;
+  }
+
+  .experience-quote-card {
+    grid-column: auto;
   }
 
   .lead-shell {
