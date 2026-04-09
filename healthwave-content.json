@@ -1,0 +1,51 @@
+{
+  "landing": {
+    "slug": "healthwave-specialty-pharmacy-care",
+    "purpose": "lead-gen",
+    "audience": "Patients, caregivers, and providers who need specialty pharmacy, infusion, or medication coordination support.",
+    "fear": "Treatment will be delayed by paperwork, insurance friction, or fragmented communication.",
+    "hero": {
+      "eyebrow": "Infusion & Medication Services",
+      "headline": "Specialty pharmacy care that keeps patients supported and treatment moving.",
+      "subheadline": "HealthWave delivers specialty pharmacy care for complex, chronic, and rare conditions with benefits review, prior authorization support, and close collaboration with providers.",
+      "cta_primary": "Request Care Coordination",
+      "booster": "Patient-first support | No confusing handoffs | Provider-aligned follow-up"
+    },
+    "trust_bar": [
+      { "value": "95%", "label": "recommendation rate presented on the current homepage" },
+      { "value": "25+", "label": "partner companies referenced across the current site" },
+      { "value": "100", "label": "customers served across the country in site messaging" },
+      { "value": "1 team", "label": "coordinating patients, providers, and plans together" }
+    ],
+    "problem_section": {
+      "eyebrow": "The Real Problem",
+      "headline": "When treatment depends on specialty pharmacy care, delays and confusion feel personal fast.",
+      "copy": "Patients worry their medication will be delayed, insurance will stall the process, or the provider's office will be forced to chase paperwork instead of focusing on care.",
+      "pain_points": [
+        "No one wants to guess whether authorizations are still moving.",
+        "Provider offices should not lose time to repetitive admin loops.",
+        "Patients with complex conditions need guidance, not another maze of callbacks."
+      ]
+    },
+    "benefits": [
+      {
+        "headline": "Get treatment moving with less friction",
+        "body": "Benefits review and authorization support help reduce the drag that slows access to specialty medication and infusion care."
+      },
+      {
+        "headline": "Feel guided instead of overwhelmed",
+        "body": "Patients get a more personal experience built around questions, support, and coordination rather than scattered updates."
+      },
+      {
+        "headline": "Keep providers focused on patient care",
+        "body": "HealthWave works closely with prescribing offices so administrative steps are handled with fewer interruptions to clinical work."
+      }
+    ],
+    "seo": {
+      "meta_title": "Specialty Pharmacy Care | HealthWave",
+      "meta_description": "Get specialty pharmacy care with patient-first coordination, faster authorization support, and provider collaboration from HealthWave.",
+      "h1": "Specialty pharmacy care that keeps patients supported and treatment moving.",
+      "target_kw": "specialty pharmacy care"
+    }
+  }
+}
